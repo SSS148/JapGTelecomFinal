@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<style>
+    .custom-me h1 {
+        font-family: Algerian;
+        background-color: black;
+        color: #fff;
+        text-align:center;
+    }
+    .custom-me h3{
+        padding: 1rem;
+        background-color:grey;
+        text-align: center;
+    }
+    .custom-me a{
+        color: #fff;
+    }
+    </style>
+
+<div class="container">
+    <div class="row custom-me">
+        <div class="col-md-12">
+            <h1 class="m-3">Welcome to the Dashboard</h1>
+
+            <h3><a href="@Url.Action("Index","Mobiles")">Mobile set Up</a></h3>
+
+            <h3><a href="@Url.Action("Index","Stocks")">Stock</a></h3>
+
+            <h3><a href="@Url.Action("Index","Offers")">Offers</a></h3>
+
+            <h3><a href="@Url.Action("Index","feedBacks")">Feed back</a></h3>
+
+            <a href="@Url.Action("Index","Home")">Logout</a>
+
+        </div>
+    </div>
+</div>
